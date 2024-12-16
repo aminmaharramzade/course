@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">Original Box 1</div>
+    <div class="box">Original Box 2</div>
+    <div class="box">Original Box 3</div>   
+    <script>
+
+//!BOLME 1
+//task 1
+// var children = 2;
+// var namePartner = "Flora";
+// var geoLoc = "Baki";
+// var jobTittle = "Mechanic"
+// console.log(`You will be a ${jobTittle} in ${geoLoc}, and married to ${namePartner} with ${children} kids.`);
+
+
+
+
+//task2
+// var birthYear = 2006;
+// var futureYear = 2030;
+// var firstAge = futureYear - birthYear;
+// var secondAge = futureYear - birthYear - 1;
+// var result = `I will be either ${firstAge} or ${secondAge} in ${futureYear}`
+// console.log(result);
+
+
+
+
+
+//task3
+//  var currentAge = 18;
+//  var maxAge = 80;
+//  var amountDay = 3;
+//  var total = ((maxAge - currentAge)*365) * amountDay;
+//  console.log(`You will need ${total} to last you until the ripe old age of X`);
+  
+
+
+
+
+
+
+
+//task4 
+//  var radius = 10
+//  var result = 2 * 3.14159 * radius;
+//  var circumference = `The circumference is ${result}`;
+ 
+//  var result2 = 3.14159 * radius ** 2
+//  var area = `The area is ${result2}`;
+//  console.log(circumference);
+//  console.log(area);
+ 
+
+
+
+
+
+//task5
+// var celsTemp = 22;
+// var fahrnTemp = (celsTemp / 5)* 9 + 32
+// console.log(`${celsTemp} is ${fahrnTemp}`); // burada C derece tapdig
+
+// var fahTemp = 58;
+// var celTemp = (fahTemp - 32)* 5 / 9;
+// console.log(`${fahTemp} is ${celTemp}`); // burada F derece tapdig
+
+
+
+
+
+
+//BOLME2
+//task1 
+// var a = 3
+// var b = 7
+// if(a<b) {
+//     console.log(`The greater number of ${a} and ${b} is ${b}`);   
+// }else {
+//     console.log(`The greater nummber of ${a} and ${b} is ${a}`);   
+// }
+
+
+
+
+
+//task2 
+// var langCode = "en";
+// if (langCode) {
+//     console.log("Hello World!");
+// }else if (langCode == "ru") {
+//     console.log("Privet Mir!");   
+// }else  {
+//     console.log("Merhaba Dunya!");   
+// }
+
+
+
+//task3
+// var score = 98;
+// if (score >=90) {
+//     console.log("Your point is A");
+// }
+// else if(score >= 60){
+//     console.log("Your point is B");  
+// }
+// else if(score >=45 ){
+//     console.log("Your point is C")
+// }
+// else if(score >= 25){
+//     console.log("Your point is D");
+// }
+// else {
+//     console.log("Your point is F");
+// }
+
+
+
+
+
+//task4 
+// var noun = "dog";
+// var number = 5;
+// if(number >1){
+//     console.log(`${number} ${noun}s`);
+// }else {
+//     console.log (`${number}${noun}`);
+// }
+
+
+
+
+
+ 
+//BOLME3
+//task1
+// var array1 = [1, 2, 3];
+// var array2 = [2, 30, 1];
+// var result = array1.concat(array2)
+// console.log(result);
+
+
+
+
+//task2 
+// var list = [1,2,3,[4],[5],6,[7]];
+// var result = list.flat(3);  //3 defe girib baxib acdi arraycikleri
+// console.log(result);
+
+
+
+
+///task3 
+// var list1 = [7, 9, 0, -2]
+// var list2 = [[1],3]
+
+// var firstList = list1.slice(0,1);
+// console.log(firstList);
+
+// var secondList = list2.slice(0,1);
+// var result2 = secondList.flat(1)
+// console.log(result2);
+
+
+
+
+
+
+
+//task4 
+// var student_list =["John","Marry","Ali","Sophia"]
+// var studentName = "John";
+// var nameExit = student_list.indexOf("John");//burada tapdimki john arrayda var
+// //console.log(nameExit);
+
+// console.log(`${studentName} is a student.`);
+
+
+
+
+
+
+
+//task5 
+// let array = [1,2,3,4,5];
+// let result = array.reverse();
+
+// console.log(result);
+
+
+
+
+
+
+
+//task6
+// let array = [[1, 2], [3, 4], [5, 6]];
+// let result = array.flat(3);
+// console.log(result);
+
+
+
+
+
+
+
+
+//task7 
+// var list = ["John","Katy","Simson"]
+// var result = list[2];
+
+// console.log(result + " is last student in the class.");
+
+
+
+
+
+
+
+//task8
+// var list = [1,2,3,4,5,2]
+// var result = list[1];
+// console.log(result);
+
+
+
+
+
+
+
+//BOLME4 
+//task1
+// var word = "Amin";
+// var length = word.length;
+
+// console.log(length);
+
+
+
+//task2 
+// var elementCount = 4;
+// var element = 11;
+
+// let result = Array(elementCount).fill(element);
+// console.log(result);
+
+//task3 
+// let text = "javasript"
+// let result = text.charAt(0).toUpperCase() + text.slice(1)
+
+// console.log(result);
+
+
+//task4 
+// let name = "john doe";
+// let result = name.toUpperCase();
+// console.log(result);
+
+
+
+//task5 
+// let weather = "Today is a sunny day";
+// let result = weather.replace("sunny","rainy");
+
+// console.log(result);
+
+
+
+
+//task6  
+// let sent = "JavaScript is a funny language";
+// let result = sent.split(" ")
+
+// console.log(result);
+
+
+
+//task7 
+// let fruits = ["Apple", "Banana", "Mango"];
+// let searchFruit = "Orange";
+// fruits.push(searchFruit)
+
+// if(searchFruit) {
+//     console.log(`axtardiginiz ${searchFruit} tapildi`);
+// }else {
+//     console.log("hecbir netice tapilmadi");    
+// }
+
+
+//task8 
+// let firstNames = ["John","Jane"];
+// let lastNames = ["Doe","Smith"];
+
+// let merge = firstNames.concat(lastNames);
+// merge.pop();
+// merge.shift();
+
+// console.log(merge);
+
+
+
+//task9 
+// let word = "Javascript";
+// let result = word.split("").reverse().join("");
+
+// console.log(result);
+
+
+
+//task10
+// let fruits = ["Apple", "Banana", "Mango", "Orange"];
+// let indexNum = fruits.indexOf("Banana");
+
+// console.log(indexNum);
+
+
+
+
+
+//BOLME5 
+//task1
+
+// let sumArray = [1,2,3,4];
+
+// let sum = 0;
+
+// for(let i = 0; i < sumArray.length; i++){
+//     sum += sumArray[i];
+    
+// }
+// console.log(sum);
+
+
+
+
+//task2 
+
+// let factorial = 1;
+
+// for(let i = 1; i <=5; i++){ // i 2de ola biler fergi yoxdur
+//     factorial *= i;
+// }
+// console.log(factorial);
+
+
+//task3 
+// let arr = [3, 7, 2, 8, 5];
+// let max = arr[0];
+
+// for(i=0; i < arr.length;i++){
+//     if(max < arr[i]){
+//         max = arr[i]
+//     }
+// }
+// console.log(max);
+
+//task4
+
+// let word = "hello";
+// let word2 = "";
+
+// for(i = word.length -1; i >= 0; i--){
+//     word2 = word2 + word[i]
+// }
+// console.log(word2);
+
+
+//task5 
+// function isPrime(num){
+//  if(num%2==0){
+//     return false 
+//  }else {
+//     return true
+//  }
+// }
+// console.log(isPrime(7));
+// console.log(isPrime(4));
+
+
+
+//BOLME6 
+
+
+//task1
+// function countVowels(str){
+//     let vowels = "aeiou"
+//     let vowelCount = 0;
+
+//     for(let i=0 ; i < str.length;i++){
+//         if(vowels.includes(str[i])){
+//             vowelCount++;
+//         }
+//     }
+//         return vowelCount
+
+// }
+// console.log(countVowels("javascript"));
+
+
+//task2 
+// function printEvents(num){
+
+// for(i=2;i <=num ; i+= 2){
+//     console.log(i);
+    
+    
+// }
+
+// }
+// printEvents(10)
+
+//task3 
+// function sumDigits(nums){
+//     let sum = 0
+//     let result = nums.toString();
+
+//     for(let i=0; i< result.length;i++){
+//     sum+= +result[i];
+//     }
+//     return sum
+// }
+// console.log(sumDigits(123));
+
+//task4 
+// function multiplicationTable(num){
+//     for(i=1 ; i<= 10;i++){
+//         console.log(`${num} X ${i} = ${num*i}`);
+        
+//     }
+// }
+// multiplicationTable(3)
+
+
+//task5
+
+// function fizzBuzz(n){
+
+//     for(i= 0;i <=n ; i++){
+//         if(i % 3 == 0 && i % 5 == 0){
+//             console.log("FizzBuzz");
+//         }else if(i % 3 == 0){
+//             console.log("Fizz");
+            
+//         }else if(i % 5 == 0){
+//             console.log("Buzz");
+            
+//         }else {
+//             console.log(i);
+            
+//         }
+//     }
+// }
+// fizzBuzz(15);
+
+
+//BOLME 7 
+//task 1
+
+// function performOperation(numb, callback) {
+//     callback(numb);
+// }
+
+// function callbackFunc(num) {
+//     console.log("Number: " + num);
+// }
+
+// performOperation(7, callbackFunc);
+
+//task2 
+//////////////////////
+
+//task4
+// let numbers = [3,8,2,10,5];
+// let maxNumber = Math.max(...numbers);
+
+// console.log(maxNumber)
+
+
+//task5 
+// let numbers = [15,7,9,2,12];
+// let minNumber = Math.min(...numbers)
+// console.log(minNumber);
+
+
+//task6
+// let num = 8.9;
+// let floored = Math.floor(num)
+// console.log(floored);
+
+//task7 
+// let num = 4.1;
+// let ceiled = Math.ceil(num)
+// console.log(ceiled);
+
+//task8
+// let num = 6.75;
+// let rounded = Math.round(num);
+// console.log(rounded);
+
+
+//task9
+// let num = -20;
+// let absoluteValue = Math.abs(num)
+
+// console.log(absoluteValue);
+
+//task10 
+// let num = 81;
+// let sqrtValue = Math.sqrt(num)
+// console.log(sqrtValue);
+
+//task11 
+// let base = 5;
+// let exponent = 3;
+// let power = Math.pow(base,exponent)
+
+// console.log(power );
+
+//task12
+// let randomNumber = Math.random()
+// console.log(randomNumber);
+
+//task13 
+// let num = 15.987;
+// let truncated = Math.trunc(num)
+
+// console.log(truncated);
+
+
+
+
+
+
+// BOLME 8
+// task1
+
+// function filterEvenNumbers(arr) {
+//   return arr.filter(num => num % 2 == 0);
+// }
+
+// let inputArray = [1, 2, 3, 4, 5, 6];
+// console.log(`Even numbers: ${filterEvenNumbers(inputArray)}`);
+
+
+//task2 
+// function filterOddNumbers(arr){
+//     return arr.filter(num => num % 2 !== 0);
+// }
+
+// let inputArray = [1, 2, 3, 4, 5, 6];
+// console.log(`Odd numbers: ${filterOddNumbers(inputArray)}`);
+
+
+//task3
+// function removeDuplicates(num){
+//     return num.filter((value , index) => num.indexOf(value) == index)
+// }
+
+// let inputArray = [1, 2, 2, 3, 4, 4, 5];
+// console.log(`Array without duplicates: ${removeDuplicates(inputArray)}`);
+
+
+// BOLME9
+//task1 
+// function greet(callback){
+
+//     function inner(){
+//     console.log(`Hello ${callback}`);
+    
+//     }
+//     return inner()
+
+// }
+// greet("Amin")
+
+//task2
+// function createCounter(){
+//     let count = 0;
+//     return function(){
+//         count ++;
+//         return count
+//     }
+
+// }
+
+// const counter = createCounter()
+
+// console.log(counter());
+
+//task3 
+// function countVowels(str){
+//     let vowels = "aeiouAEIOU"
+//     let vowelCount = 0
+
+//     for(i=0;i < str.length ; i++){
+//         if(vowels.includes(str[i])){
+//             vowelCount++;
+//         }
+       
+//     }
+//     return vowelCount
+// }
+// console.log(countVowels("Salam"));
+
+
+
+ 
+//task4
+
+//function countVowels(str){
+//     let vowels = "aeiou"
+//     let vowelCount = 0;
+
+//     for(let i=0 ; i < str.length;i++){
+//         if(vowels.includes(str[i])){
+//             vowelCount++;
+//         }
+//     }
+//         return vowelCount
+
+
+//task5 
+
+// function isPalindrome(str){
+//    let word = str.split("").reverse().join("")
+
+//    if(word == str){
+//     return true
+//    }else{
+//     return false
+//    }
+// }
+//    console.log(isPalindrome("madam"));
+
+
+
+
+
+
+//BOLME 10
+//task 1
+
+// const companies = [
+//     {name:'Whelp' , category:'Development' , start:2002 , end:2021},
+//     {name:'ByQr' , category:'Finance' , start:1998 , end:2023},
+//     {name:'Marandi' , category:'Design' , start:2012 , end:2022},
+//     {name:'Kapital' , category:'Technology' , start:1992 , end:2015},
+//     {name:'Pasha' , category:'Retail' , start:1999 , end:2005},
+//     {name:'Rabite' , category:'Finance' , start:2006 , end:2009},
+//     {name:'Irshad' , category:'Development' , start:2004 , end:2021},
+//     {name:'AzGranata' , category:'Design' , start:1993 , end:2011},
+//     {name:'AzerSun' , category:'Development' , start:1997 , end:2001},
+//     {name:'Veyseloglu' , category:'Design' , start:1988 , end:2018},
+// ]
+
+// function companyName() {
+//   return companies.map(function (el) {
+//     return el.name;
+//   });
+// }
+
+// let names = [];
+// for (let i = 0; i < companies.length; i++) {
+//   names.push(companies[i].name);
+// }
+// console.log(names);
+// let names = [];
+// companies.forEach(el => {
+//   names.push(el.name);
+// });
+// console.log(names);
+// let names = companies.map(el => el.name);
+// console.log(names);
+
+
+
+//task2
+// const companies = [
+    // {name:'Whelp' , category:'Development' , start:2002 , end:2021},
+    // {name:'ByQr' , category:'Finance' , start:1998 , end:2023},
+    // {name:'Marandi' , category:'Design' , start:2012 , end:2022},
+    // {name:'Kapital' , category:'Technology' , start:1992 , end:2015},
+    // {name:'Pasha' , category:'Retail' , start:1999 , end:2005},
+    // {name:'Rabite' , category:'Finance' , start:2006 , end:2009},
+    // {name:'Irshad' , category:'Development' , start:2004 , end:2021},
+    // {name:'AzGranata' , category:'Design' , start:1993 , end:2011},
+    // {name:'AzerSun' , category:'Development' , start:1997 , end:2001},
+    // {name:'Veyseloglu' , category:'Design' , start:1988 , end:2018},
+// ]
+
+// task1
+// const years = companies.filter((el)=>
+//    el.start >= 1988 && el.end < 2014
+// )
+// console.log(years);
+
+
+//task2 
+// const yearsResult = companies.filter((el) =>
+//      el.end - el.start == 25
+
+// )
+// console.log(yearsResult);
+
+
+//task3
+
+// const sortedNames = companies.sort((a,b) =>
+//      a.name > b.name ? 1 : a.name < b.name ?-1 : 0
+
+//     )
+// console.log(sortedNames);
+
+
+   
+
+
+
+
+
+// const arr=companies.map(comp=>{
+//     let result = (comp.end-comp.start)+ " years"
+//         return `${comp.name} ${result}`
+//    })
+// console.log(arr);
+
+// const sortedYears = companies.sort((a, z) => z.start - a.start);
+// console.log(sortedYears);
+
+
+// const x = 0;
+// const y = false;
+
+
+
+// console.log(false -  true);
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const [a,b,...rest] = numbers
+
+// console.log(rest);
+
+
+// const car = {
+//   make: "Toyota",
+//   model: "Camry",
+//   year: 2020,
+//   color: "blue"
+// };
+
+// const {make,model,year} = car
+
+// console.log(model);
+
+
+// function Person(name, age){
+//     this.name = name;
+//     this.age = age;
+// }
+
+// Person.prototype.greet = function(){
+//     console.log(`Hello my name is ${this.name} ${this.age}`);
+    
+// }
+
+// const person1 = new Person("Amin", 18)
+
+// person1.greet()
+
+// const user = {
+//   name: "Tom",
+//   age: 25
+// };
+
+// const {name:userName,age,country='unknown'} = user
+// console.log(country);
+
+// const data = {
+//       errors: [
+//         {
+//           status: "403",
+//           source: { pointer: "/data/attributes/secretPowers" },
+//           detail: "Editing secret powers is not authorized on Sundays."
+//         },
+//         {
+//           status: "422",
+//           source: { pointer: "/data/attributes/volume" },
+//           detail: "Volume does not, in fact, go to 11."
+//         },
+//         {
+//           status: "500",
+//           source: { pointer: "/data/attributes/reputation" },
+//           title: "The backend responded with an error",
+//           detail: "Reputation service not responding after three requests."
+//         },
+//         {
+//           status: "403",
+//           source: { pointer: "/data/attributes/secretPowers" },
+//           detail: "Duplicate error with the same pointer and status."
+//         },
+//         {
+//           status: "999",
+//           source: { pointer: "/data/attributes/invalid" },
+//           detail: "This is an invalid status error."
+//         }
+//       ]
+//     };
+
+
+//     const error = data.errors.find(item => item.status.includes("se") === "500");
+//     console.log("Error 500 is detected:" ,error);
+    
+//    const divEl = document.querySelectorAll(`.box`)
+
+//    divEl.forEach(div => {
+//     div.innerText = "This is a box"
+//    })
+
+// const divEl = document.querySelectorAll(`.box`)
+
+//    divEl.forEach(div => div.innerText = "This is a box")
+
+
+
+    </script>
+</body>
+</html>
