@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="movieInput" placeholder="Enter movie name" />
+
+    <div style="height: 20vh; width: 20vh; background-color: antiquewhite;">
+      <img id="moviePoster" src="" alt="">
+      <h1 style="font-size: 12px;">Movie Details</h1>
+      <p id="movieDetails"></p>
+      <p id="movieDetail"></p>
+    </div>
+    <script>
+      //! TASK
+      document.querySelector("#movieInput").addEventListener("input", () => {
+        showMovie(movieInput.value);
+      });
+      function showMovie(movie) {
+        let apiKey = "fc1fef96";
+        let promise = fetch(
+          `https://www.omdbapi.com/?t=${movie}&apikey=${apiKey}`
+        );
+        promise
+          .then((response) => {
+            let res = response.json();
+            return res;
+          })
+          .then((data) => {
+            document.querySelector("#moviePoster").src = data.Poster;
+            document.querySelector("#movieDetails").innerText = data.Actors;
+            document.querySelector("#movieDetail").innerText = data.Plot;
+
+          });
+      }
+
+
+      // Search ile edende
+      //    data.Search.slice(5)    meselem bele olur
+
+  
+
+
+    </script>
+  </body>
+</html>
