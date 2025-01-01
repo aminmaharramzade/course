@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img id="poster" src="" alt="Movie Poster" />
+    <script>
+
+        //task5
+    //   const apiKey = "53f871c3";
+
+    //   async function getMovie(movie) {
+    //     try {
+    //       const response = await fetch(
+    //         `http://www.omdbapi.com/?apikey=${apiKey}&t=${movie}`
+    //       );
+    //       const data = await response.json();
+    //       console.log(data);
+    //         document.getElementById("poster").src = data.Poster;
+    //     } catch (error) {
+    //       console.log(error);
+    //     }
+    //   }
+
+    //   getMovie("Sully");
+
+
+
+
+      //   const apiKey = "53f871c3";
+      //   const searchKeyword = "Sully";
+
+      //task1
+
+      // async function getMovie(movie) {
+      //     try {
+      //         const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&t=${movie}`);
+      //         const data = await response.json();
+      //         console.log(data);
+      //     } catch (error) {
+      //         console.log(error);
+      //     }
+      // }
+
+      // getMovie(titleMovie);
+
+
+
+
+
+
+
+
+
+      //task2
+
+      // async function searchMovies() {
+      //     try {
+      //         const response = await fetch(`https://www.omdbapi.com/?s=${searchKeyword}&apikey=${apiKey}`);
+      //         const data = await response.json();
+      //         if (data.Response === "True") {
+      //             data.Search.slice(0, 5).forEach((movie, index) => {
+      //                 console.log(`${index + 1}. ${movie.Title}`);
+      //             });
+      //         } else {
+      //             console.log('No movies found for this keyword.');
+      //         }
+      //     } catch (error) {
+      //         console.error('Error fetching movie data:', error);
+      //     }
+      // }
+      // searchMovies();
+
+
+
+
+
+
+
+
+      //task3
+      //     const apiKey = "53f8713";
+      //     async function getMovie(movie) {
+      //       try {
+      //           const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&t=${movie}`);
+      //           const data = await response.json();
+      //           console.log(data);
+      //       } catch(error) {
+      //           console.log("failed to fetch:" , error);
+      //       }
+      //   }
+
+      //   getMovie('Sully');
+
+
+
+
+
+
+
+
+      
+
+      //task4
+      // const apiKey = "53f871c3";
+      //   const titleMovie = "Sully";
+
+      //   async function getMovie() {
+      //       try {
+      //           const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&t=${titleMovie}`);
+      //           const data = await response.json();
+      //           console.log(data);
+      //           data.Ratings.forEach((rating) => {
+      //               console.log(`${rating.Value}`);
+      //           });
+
+      //       } catch (error) {
+      //           console.log(error);
+      //       }
+      //   }
+
+      //   getMovie(titleMovie);
+    </script>
+  </body>
+</html>
