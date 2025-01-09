@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      background-color: red;
+      padding: 30px;
+      width: 200px;
+    }
+
+    .box-area h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-size: 18px;
+    }
+
+    .box-area img {
+      width: 140px;
+    }
+
+    .box-area {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  </style>
+  <body>
+    <div id="boxArea" class="box-area"></div>
+    <script>
+      fetch("https://dummyjson.com/products")
+        .then((response) => response.json())
+        .then((data) => {
+          const boxArea = document.getElementById("boxArea");
+
+          data.products.forEach((product) => {
+            const box = `
+         <div class="box">
+            <img src="${product.thumbnail}" alt="s">
+            <h6>${product.title}</h6>
+            <p>${product.description}</p>
+            <h1>Price ${product.price}</h1>
+            <h2>${product.rating}</h2>
+            <h3>${product.tags}</h3>
+            <h4>${product.stock}</h4>
+            <h5>${product.brand}</h5>
+            <button onclick="location.href='details.html#${product.id}'">Details</button>
+        </div>
+          `;
+            boxArea.innerHTML += box;
+          });
+        })
+        .catch((error) => console.error("Error fetching data:", error));
+    </script>
+  </body>
+</html>
