@@ -1,0 +1,10 @@
+.home {
+    padding-top: 60px;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    height: 80vh;
+}
